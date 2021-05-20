@@ -1,31 +1,31 @@
-**This is a CodinGame task.**
+**Это задача с сайта CodinGame.**
 
-*I'm just tryin' to write clear and readable code,
-which could be scaled continuously by anyone.*
+*Я лишь стараюсь писать чистый, читабельный код,
+расширять который сможет любой*
 
 ---
 
-## Instructions:
-> Your goal is to output a cube of dimensions w x h x d in ASCII Art,
+## Инструкция:
+> Твоя цель — вывести параллелепипед из пространства Ш x В x Г в ASCII Art,
 oriented so that the front face is in the direction of bottom left.
 Therefore, the three visible faces are the front, the top and the right.
-The visible edges are represented with the characters `/`, `\ ` and `_`.
-You'll have to draw the hidden edges too, with the characters `⠌`, `⠡` and `.`.
+Видимые грани должны быть помечены символами `/`, `\ ` и `_`, соответственно.
+Ты должен также отрисовать и невидимые грани. Сделать это можно с помощью символов: `⠌`, `⠡` и`.`, соответственно.
 
-## Notes:
-- `⠌` or `⠡` are characters from braille alphabet. Their unicode are `0x280c` and `0x2821`, respectively.
-- Because a console character is higher than large, a unit of 1 w (width) is represented with two characters instead of one (`__` or `..`).
-- If a visible face has a width, a height or a depth of 1, you won't have to draw the hidden edges behind this face.
+## Примечания:
+- `⠌` or `⠡` are characters from braille alphabet. Юникод этих символов `0x280c` и `0x2821`, соответственно.
+- Так как консольные символы по высоте являются больше длины, следует принять за единицу ширины два символа вместо одного (`__` или `..`).
+- Если все вводимые значения равны 1, невидимые грани не отрисовываются.
 - If a solid line and a dotted line are layered on the same character, the priority always goes to the solid line, except for a hidden oblique edge (`⠌` or `⠡`), which must replace a visible horizontal edge (`_`) (see examples below).
 
-## Examples:
-**Input:**
+## Примеры:
+**Ввод:**
 ```
 w = 4
 h = 2
 d = 4
 ```
-**Output:**
+**Вывод:**
 ```
     ________
    /⠡      /\
@@ -37,13 +37,13 @@ d = 4
 ```
 ___
 
-**Input:**
+**Ввод:**
 ```
 w = 6
 h = 2
 d = 2
 ```
-**Output:**
+**Вывод:**
 ```
   ____________
  /⠡          /\
@@ -53,44 +53,44 @@ d = 2
 ```
 ---
 
-**Input:**
+**Ввод:**
 ```
 w = 1
 h = 1
 d = 1
 ```
 
-**Output:**
+**Вывод:**
 ```
  __
 /_/\
 \_\/
 ```
 ---
-**Input:**
-- **Line 1**: An integer `w` for the *width*.
-- **Line 2**: An integer `h` for the *height*.
-- **Line 3**: An integer `d` for the *depth*.
+**Ввод:**
+- **Строка 1**: An integer `Ш` for the *ширины*.
+- **Строка 2**: An integer `В` for the *высоты*.
+- **Строка 3**: An integer `Г` for the *глубины*.
 ---
-**Output:**
+**Вывод:**
 
-- An ASCII Art of a cube of dimensions `w` x `h` x `d`.
+- An ASCII Art of a cube of dimensions `Ш` x `В` x `Г`.
 ---
-**Constraints:**
-- `w` > 0
-- `h` > 0
-- `d` > 0
+**Условия:**
+- `Ш` > 0
+- `В` > 0
+- `Г` > 0
 ---
-**Example**
+**Пример**
 
-**Input:**
+**Ввод:**
 ```
 8
 3
 2
 ```
 
-**Output:**
+**Вывод:**
 ```
   ________________
  /⠡              /\
