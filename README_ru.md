@@ -7,7 +7,9 @@
 
 ## Инструкция:
 > Твоя цель — вывести параллелепипед из пространства Ш x В x Г в ASCII Art,
-oriented so that the front face is in the direction of bottom left.
+oriented so 
+
+лицевая часть смотрит в направлении в левый нижний угол
 Therefore, the three visible faces are the front, the top and the right.
 Видимые грани должны быть помечены символами `/`, `\` и `_`, соответственно.
 Ты должен также отрисовать и невидимые грани. Сделать это можно с помощью символов: `⠌`, `⠡` и`.`, соответственно.
