@@ -18,6 +18,7 @@ int ReadLine_Int () {
   return x;
 }
 
+// TODO: Make vector filling with given const symbols of 2D Skewed Rectangle 
 class Rectangle {
   protected:
     unsigned int width, height;
