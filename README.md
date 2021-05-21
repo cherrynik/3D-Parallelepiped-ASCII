@@ -1,3 +1,5 @@
+[Русская версия](README_ru.md)
+
 **This is a CodinGame task.**
 
 *I'm just tryin' to write clear and readable code,
