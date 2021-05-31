@@ -1,7 +1,8 @@
 #include <iostream>
+#include <vector>
 #include "vector.h"
-#include "rectangle.h" // TODO: Refactoring
-
+#include "rectangle.h" // TODO: Improve comments
+#include "parallelepiped.h" // TODO: Real 3d simulation
 
 int ReadLine_Int () {
   int x;
@@ -10,30 +11,12 @@ int ReadLine_Int () {
   return x;
 }
 
-class Parallelepiped : protected Rectangle {
-  private:
-    unsigned int depth;
-    Vector3D<std::string> parallelepiped;
-
-    // InitParallelepipedSize() : InitRectangleSize() {
-    //
-    // }
-
-  public:
-    Parallelepiped(const int width, const int height, const int depth) :
-    Rectangle(width, height) {
-      this -> depth = depth;
-
-      // InitParallelepipedSize();
-    }
-};
-
+// 2nd solution
 int main () {
-  unsigned const int width = ReadLine_Int();
-  unsigned const int height = ReadLine_Int();
-  // unsigned const int depth = ReadLine_Int();
+  const unsigned int width  = ReadLine_Int(),
+                     height = ReadLine_Int();
+                     // depth  = ReadLine_Int();
 
-  // 1st solution
-  Rectangle rectangle = Rectangle(width, height);
-  rectangle.ShowSkewed();
+  Rectangle rect = Rectangle(width, height);
+  rect.Show();
 }
